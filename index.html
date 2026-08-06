@@ -32,13 +32,15 @@
     <nav class="fixed w-full z-50 bg-corporateNavy text-white shadow-lg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
-                <div class="flex-shrink-0 flex items-center">
-                    <img src="./CL_LOGO_1000px.jpg" alt="C&L_DEVELOPMENT" class="h-16 w-auto">
-                </div>
+                <a href="#" class="flex-shrink-0 flex items-center">
+                    <!-- Updated Logo Implementation -->
+                    <img src="./CL_LOGO_1000px.jpg" alt="C&L_DEVELOPMENT" class="h-16 w-auto rounded-sm">
+                </a>
                 <div class="hidden md:flex space-x-8 items-center">
                     <a href="#about" class="hover:text-accentBlue transition duration-300">The Founders</a>
                     <a href="#portfolio" class="hover:text-accentBlue transition duration-300">Portfolio</a>
                     <a href="#methodology" class="hover:text-accentBlue transition duration-300">Our Digital Moat</a>
+                    <a href="https://billing.stripe.com/p/login/5kQ5kF78JeNjf4J3Ufb3q00" target="_blank" class="hover:text-accentBlue transition duration-300 font-semibold">Client Portal</a>
                     <a href="https://calendar.app.google/XctVuQu2VBNaobQu5" target="_blank" class="bg-accentBlue hover:bg-blue-700 text-white font-bold py-2 px-6 rounded transition duration-300 shadow-md">
                         Book an Appointment
                     </a>
@@ -153,6 +155,18 @@
                     <p class="text-gray-600 text-sm">We do not stall cash flow. We align our execution with institutional loan release tranches. Active labor and material staging are confined to tightly controlled 3-to-4 unit blocks, completely eliminating trade stacking and chaos.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- New Client Portal Section -->
+    <section id="portal" class="py-16 bg-slate-800 text-white border-t border-slate-700">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold tracking-tight mb-4">Existing Client Portal</h2>
+            <p class="text-gray-300 mb-8 text-lg font-light">Access your dedicated project ledgers, review active billing cycles, and securely manage your account via our Stripe integration.</p>
+            <a href="https://billing.stripe.com/p/login/5kQ5kF78JeNjf4J3Ufb3q00" target="_blank" class="inline-flex items-center bg-white text-corporateNavy hover:bg-gray-200 font-bold py-3 px-8 rounded text-lg transition duration-300 shadow-lg">
+                Access Invoices & Billing
+                <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
         </div>
     </section>
 
