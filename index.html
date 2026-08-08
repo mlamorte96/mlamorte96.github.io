@@ -66,7 +66,7 @@
                 We bring 40 years of field-tested grit and elite project management to your build. From multi-unit residential campuses to high-stakes commercial fit-outs, we make the hardest projects look easy. We handle the dirt, the trades, and the town—so you don't have to.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="https://www.upwork.com/agencies/cldevcon/" target="_blank" class="bg-accentBlue hover:bg-blue-700 text-white font-bold py-3 px-8 rounded text-lg transition duration-300 shadow-lg">Engage Our Firm</a>
+                <a href="[INSERT_UPWORK_AGENCY_LINK_HERE]" target="_blank" class="bg-accentBlue hover:bg-blue-700 text-white font-bold py-3 px-8 rounded text-lg transition duration-300 shadow-lg">Engage Our Firm</a>
                 <a href="#portfolio" class="bg-transparent border border-white hover:bg-white hover:text-corporateNavy text-white font-bold py-3 px-8 rounded text-lg transition duration-300">View Our Work</a>
             </div>
         </div>
@@ -79,22 +79,29 @@
                 <p class="mt-4 text-lg text-steelGray">A deliberate division of labor merging decades of physical site reality with highly structured project management.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div class="bg-gray-50 p-8 border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition">
-                    <h3 class="text-2xl font-bold text-corporateNavy mb-2">Gregory Clark</h3>
-                    <p class="text-accentBlue font-semibold mb-4">Managing Partner | Field Execution & Quality Control</p>
-                    <p class="text-gray-600 leading-relaxed mb-6">
-                        With a history spanning 40 years, Greg has physically built and overseen everything from high-end residential estates to the One World Observatory in NYC. He runs the dirt, the trades, and the schedule with absolute authority and zero tolerance for delays. He is the physical execution engine that makes complex builds look effortless.
-                    </p>
-                    <button onclick="openModal('greg-soq-modal')" class="bg-corporateNavy hover:bg-slate-800 text-white font-bold py-2 px-6 rounded transition duration-300 w-full sm:w-auto">
+                <div class="bg-gray-50 p-8 border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-bold text-corporateNavy mb-2">Gregory Clark</h3>
+                        <p class="text-accentBlue font-semibold mb-4">Managing Partner | Field Execution & Quality Control</p>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            With a history spanning 40 years, Greg has physically built and overseen everything from high-end residential estates to the One World Observatory in NYC. He runs the dirt, the trades, and the schedule with absolute authority and zero tolerance for delays. He is the physical execution engine that makes complex builds look effortless.
+                        </p>
+                    </div>
+                    <button onclick="openModal('greg-soq-modal')" class="bg-corporateNavy hover:bg-slate-800 text-white font-bold py-2 px-6 rounded transition duration-300 w-full sm:w-auto self-start mt-4">
                         View Qualifications
                     </button>
                 </div>
-                <div class="bg-gray-50 p-8 border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition">
-                    <h3 class="text-2xl font-bold text-corporateNavy mb-2">Michael LaMorte</h3>
-                    <p class="text-accentBlue font-semibold mb-4">Managing Partner | Operations & Strategy</p>
-                    <p class="text-gray-600 leading-relaxed mb-4">
-                        Steeped in ground-up construction since age 15, Michael is the engine keeping the project moving forward behind the scenes. He navigates municipal red tape, drives the digital scheduling workflows, and ensures every dollar of your budget is deployed efficiently. He anticipates the roadblocks and handles the headaches before they ever reach the ownership group.
-                    </p>
+                <div class="bg-gray-50 p-8 border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-bold text-corporateNavy mb-2">Michael LaMorte</h3>
+                        <p class="text-accentBlue font-semibold mb-4">Managing Partner | Operations & Strategy</p>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Steeped in ground-up construction since age 15, Michael is the engine keeping the project moving forward behind the scenes. He navigates municipal red tape, drives the digital scheduling workflows, and ensures every dollar of your budget is deployed efficiently. He anticipates the roadblocks and handles the headaches before they ever reach the ownership group.
+                        </p>
+                    </div>
+                    <button onclick="openModal('michael-soq-modal')" class="bg-corporateNavy hover:bg-slate-800 text-white font-bold py-2 px-6 rounded transition duration-300 w-full sm:w-auto self-start mt-4">
+                        View Qualifications
+                    </button>
                 </div>
             </div>
         </div>
@@ -188,7 +195,7 @@
         </div>
     </footer>
 
-    <div id="greg-soq-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-corporateNavy bg-opacity-90 p-4 backdrop-blur-sm">
+    <div id="greg-soq-modal" class="modal-bg hidden fixed inset-0 z-50 flex items-center justify-center bg-corporateNavy bg-opacity-90 p-4 backdrop-blur-sm">
         <div class="bg-white rounded-lg shadow-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto modal-fade-in relative">
             
             <div class="sticky top-0 bg-white border-b border-gray-200 px-8 py-5 flex justify-between items-center z-10 rounded-t-lg">
@@ -235,7 +242,64 @@
                     Close Document
                 </button>
             </div>
+        </div>
+    </div>
 
+    <div id="michael-soq-modal" class="modal-bg hidden fixed inset-0 z-50 flex items-center justify-center bg-corporateNavy bg-opacity-90 p-4 backdrop-blur-sm">
+        <div class="bg-white rounded-lg shadow-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto modal-fade-in relative">
+            
+            <div class="sticky top-0 bg-white border-b border-gray-200 px-8 py-5 flex justify-between items-center z-10 rounded-t-lg">
+                <h3 class="text-2xl font-extrabold text-corporateNavy">Executive Statement of Qualifications</h3>
+                <button onclick="closeModal('michael-soq-modal')" class="text-gray-400 hover:text-red-600 transition">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+
+            <div class="px-8 py-6">
+                <div class="mb-8">
+                    <h4 class="text-xl font-bold text-accentBlue mb-1">Michael LaMorte</h4>
+                    <p class="text-sm font-semibold text-gray-500 uppercase tracking-wide">Columbia Certified CM | Operations & Strategy Director</p>
+                </div>
+
+                <div class="space-y-8">
+                    <div>
+                        <h5 class="text-lg font-bold text-corporateNavy border-b-2 border-gray-100 pb-2 mb-3">Gandi Estates (40-Unit Master Planned Campus)</h5>
+                        <p class="text-sm text-gray-500 font-semibold mb-2">Location: Waterbury, CT | Scope: Fiduciary CM & Tech Execution</p>
+                        <p class="text-gray-700 leading-relaxed text-sm">
+                            Engineered a direct multi-prime procurement framework that bypassed legacy general contractor markups, successfully compressing a $25M owner capital expectation down to a highly defensible $17.37M master budget. Directed front-end municipal zoning strategies, CSI MasterFormat bid leveling, and implemented the full-scale AIA financial billing architecture to protect developer equity.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h5 class="text-lg font-bold text-corporateNavy border-b-2 border-gray-100 pb-2 mb-3">Heavy Civil & Public Works Procurement</h5>
+                        <p class="text-sm text-gray-500 font-semibold mb-2">Location: NJ & NC | Scope: Subcontractor Vetting & Bid Optimization</p>
+                        <p class="text-gray-700 leading-relaxed text-sm">
+                            Directed rigorous bid coordination and scope gap analysis for complex civil developments. Executed strict vetting of trade partners against institutional and municipal compliance thresholds, ensuring accurate baseline estimates and protecting ownership from mid-project sub-trade defaults or unapproved change orders.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h5 class="text-lg font-bold text-corporateNavy border-b-2 border-gray-100 pb-2 mb-3">Enterprise Workflow & Infrastructure Architecture</h5>
+                        <p class="text-sm text-gray-500 font-semibold mb-2">Location: New York, NY | Scope: Corporate Tech Integration</p>
+                        <p class="text-gray-700 leading-relaxed text-sm">
+                            Designed and deployed automated project management environments utilizing Procore, Bluebeam, and Monday.com for multi-million dollar corporate portfolios. Replaced chaotic, manual field-reporting with structured, audit-ready financial ledgers and attendance matrices, drastically reducing administrative bloat and increasing operational field velocity.
+                        </p>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded border border-gray-200">
+                        <h5 class="text-md font-bold text-corporateNavy mb-2">Operational Standard</h5>
+                        <p class="text-gray-700 leading-relaxed text-sm italic">
+                            "Construction is a relationship business driven by data. We do not guess on numbers. By deploying an elite tech stack over raw field execution, we strip out the margin-stacking, eliminate blind spots, and protect the developer's equity from day one."
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sticky bottom-0 bg-gray-50 border-t border-gray-200 px-8 py-4 rounded-b-lg flex justify-end">
+                <button onclick="closeModal('michael-soq-modal')" class="bg-corporateNavy hover:bg-slate-800 text-white font-bold py-2 px-6 rounded transition duration-300">
+                    Close Document
+                </button>
+            </div>
         </div>
     </div>
 
@@ -250,10 +314,12 @@
         }
 
         // Close modal when clicking outside of the modal content
-        document.getElementById('greg-soq-modal').addEventListener('click', function(event) {
-            if (event.target === this) {
-                closeModal('greg-soq-modal');
-            }
+        document.querySelectorAll('.modal-bg').forEach(function(modal) {
+            modal.addEventListener('click', function(event) {
+                if (event.target === this) {
+                    closeModal(this.id);
+                }
+            });
         });
     </script>
 </body>
